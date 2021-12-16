@@ -6,15 +6,15 @@
 
 :root {
   /* colors */
-  --primary-100: hsl(201, 36%, 89%);
-  --primary-200: hsl(201, 36%, 78%);
-  --primary-300: hsl(202, 35%, 67%);
-  --primary-400: hsl(202, 35%, 56%);
-  --primary-500: hsl(201, 43%, 45%);
-  --primary-600: hsl(202, 42%, 36%);
-  --primary-700: hsl(202, 42%, 27%);
-  --primary-800: hsl(201, 43%, 18%);
-  --primary-900: hsl(201, 43%, 9%);
+  --primary-100: hsl(19, 95%, 93%);
+  --primary-200: hsl(20, 95%, 85%);
+  --primary-300: hsl(20, 93%, 78%);
+  --primary-400: hsl(20, 93%, 71%);
+  --primary-500: hsl(20, 94%, 63%);
+  --primary-600: hsl(20, 56%, 51%);
+  --primary-700: hsl(20, 54%, 38%);
+  --primary-800: hsl(20, 54%, 25%);
+  --primary-900: hsl(19, 54%, 13%);
 
   --grey-50: hsl(60, 9%, 98%);
   --grey-100: hsl(60, 5%, 96%);
@@ -33,13 +33,14 @@
   --red-dark: hsl(359, 47%, 51%);
   --green-light: hsl(133, 13%, 86%);
   --green-dark: hsl(132, 29%, 31%);
+  --blue: hsl(198, 61%, 39%);
 
   /* fonts */
   --headingFont: 'Montserrat', sans-serif;
   --bodyFont: 'Open Sans', sans-serif;
   --smallText: 0.7em;
 
-  --backgroundColor: var(--grey-100);
+  --backgroundColor: var(--primary-500);
   --textColor: var(--grey-900);
   --borderRadius: 0.25rem;
   --letterSpacing: 1px;
@@ -49,11 +50,8 @@
   --padding: 0.375rem 0.75rem;
 
   /* box shadow */
-  --shadow-1: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-  --shadow-2: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --shadow-3: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --shadow-4: 0 20px 25px -5px rgb(0 0 0 / 0.1),
-    0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
 }
 
 /* Global Styles */
@@ -150,8 +148,7 @@ ul {
 }
 /*  global classes */
 
-/* section
-.section {
+section .section {
   width: 90vw;
   margin: 0 auto;
   max-width: var(--max-width);
@@ -175,9 +172,9 @@ main {
   margin: 5rem 0;
   max-width: var(--fixed-width);
   background: var(--white);
-  border-radius: var(--radius);
+  border-radius: var(--borderRadius);
   padding: 1.5rem 2rem;
-  box-shadow: var(--shadow-4);
+  box-shadow: var(--dark-shadow);
 }
 .container h3 {
   font-weight: normal;
@@ -205,17 +202,17 @@ main {
   margin-bottom: 0;
 }
 .container button {
-  color: var(--clr-white);
+  color: var(--white);
   display: block;
   width: 100%;
   border-color: transparent;
-  background: var(--clr-pink);
+  background: var(--blue);
   margin: 2rem auto 0 auto;
   text-transform: capitalize;
   font-size: 1.2rem;
   padding: 0.5rem 0;
-  letter-spacing: var(--spacing);
-  border-radius: var(--radius);
-  outline: 1px solid rgba(242, 138, 178, 0.8);
+  letter-spacing: var(--letterSpacing);
+  border-radius: var(--borderRadius);
+  outline: 1px solid var(--blue);
   cursor: pointer;
-} */
+}
